@@ -1,0 +1,6 @@
+<a href="#" (click)="viewFiles($event)">View Files</a>
+
+<div *ngIf="shouldIbeVisible" (load)="listFiles($event)">
+  <h1>List Files</h1>
+  {{ file | json }}
+</div>
